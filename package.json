@@ -1,0 +1,9 @@
+{
+  "name": "srvFrontNJK",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "nunjucks": "^3.2.3",
+    "express": "^4.17.1"
+  }
+}

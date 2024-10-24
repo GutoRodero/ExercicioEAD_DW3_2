@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manutenção de Salas de Aula</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Salas de Aula</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição</th>
+          <th>Localização</th>
+          <th>Capacidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for sala in salasDeAula %}
+          <tr>
+            <td>{{ sala.salasdeaulaid }}</td>
+            <td>{{ sala.descricao }}</td>
+            <td>{{ sala.localizacao }}</td>
+            <td>{{ sala.capacidade }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="/" class="btn btn-secondary">Voltar</a>
+  </div>
+</body>
+</html>
